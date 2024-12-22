@@ -15,9 +15,9 @@ https://discord.com/oauth2/authorize?client_id=CLIENT_ID_GOES_HERE&scope=bot&per
 
 ## Example manual build
 ``` shell
-docker image build -t bradmorg/ubuntu:dbot /home/pi/discord-bot
-docker push bradmorg/ubuntu:dbot 
+docker image build -t MK/ubuntu:dbot /home/pi/discord-bot
+docker push MK/ubuntu:dbot 
 docker stop discordbot 
 docker rm discordbot
-docker run --name discordbot --restart always -d -e TOKEN=$TOKEN bradmorg/ubuntu:dbot
+docker run --name discordbot --restart always -d -e TOKEN=$TOKEN MK/ubuntu:dbot
 ```
